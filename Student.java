@@ -149,10 +149,18 @@ public class Student {
             System.out.println("No result!");
         }
     }
+    public Student hasScholarship(ArrayList<Student> students, ArrayList<Student> studentScholarships) {
+        for (Student student : students) {
+            if(subject1 > 5.0 && subject2 > 5.0 &&subject3 > 5.0 && ((subject1+subject2+subject3)/3) >= 8.0){
+                studentScholarships.add(student);
+            }
+        }
+       
+    }
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
         ArrayList<Student> studentArrayList = new ArrayList<>();
-
+        ArrayList<Student> studentScholarships = new ArrayList<>();
         do {
             System.out.print("\n1. input by hand\n" +
                     "2. input from file\n" +
