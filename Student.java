@@ -11,10 +11,7 @@ import java.util.stream.Collectors;
 
 public class Student {
     private static int count = 0;
-    private final int ID;
-    {
-        this.ID = ++count;
-    }
+    private final int ID = ++count;
     private String name;
     private final Date birthday;
     private String homeTown;
